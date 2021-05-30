@@ -6,8 +6,8 @@
     "build": "yarn tsc",
     "tsc": "tsc --project tsconfig.compile.json",
     "tsc:w": "tsc --project tsconfig.json -w",
-    "start": "nodemon --watch \"src/**/*.ts\" --ignore \"node_modules/**/*\" --exec ts-node src/index.ts",
-    "start:prod": "cross-env NODE_ENV=production node dist/index.js"
+    "start:dev": "nodemon --watch \"src/**/*.ts\" --ignore \"node_modules/**/*\" --exec ts-node src/index.ts",
+    "start": "cross-env NODE_ENV=production node dist/index.js"
   },
   "dependencies": {
     "@tsed/ajv": "^6.53.0",
